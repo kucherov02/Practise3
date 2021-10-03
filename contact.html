@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>3 Column Layout</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header"><img class="logo" src="assets/img/startup.svg" alt="icon"></header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Contact</h1>
+           <form >
+            <input type="text" name="name"></input>
+            <input type="date" name="birthday"></input>
+            <input type="email" name="email"></input>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label> <br>
+            <label for="countries">Choose a country:</label>
+            <select id="countries" name="countries">
+            <option value="Ukraine">Ukraine</option>
+            <option value="Greece">Greece</option>
+            <option value="Germany">Germany</option>
+            <option value="USA">USA</option>
+            </select>
+            <input type="phone" name="phone"></input>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="checkbox" id="accept" name="accept" value="YEs">
+            <label for="accept">i accept terms and conditions</label><br>
+            <textarea name="message" rows="3" cols="30">
+                Оставьте отзыв
+            </textarea> <br>
+            <input type="file">
+            <input type="submit" value="Submit">
+           </form>
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Left heading</h3>
+       <ul>
+        <li><a href="about.html">about</a></li>
+        <li><a href="index.html">home</a></li>
+        <li><a href="media.html">media</a></li>
+        <li><a href="slider.html">slider</a></li>
+        <li><a href="table.html">table</a></li>
+    </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"><p>Footer...</p></footer>
+</div>
+</body>
+</html>

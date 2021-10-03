@@ -1,0 +1,10 @@
+.logo{
+    height: 3rem;
+    width: 3rem;
+    padding: .5rem 1rem;
+}
+
+blockquote{
+    color: rgb(24, 216, 18);
+    font-size: 1.2rem;
+}
