@@ -5,6 +5,29 @@
    <title>3 Column Layout</title>
    <link rel="stylesheet" href="assets/css/layout.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   
+   <script>
+   window.onload = function() {
+       // ви можете зробити скільки завгодно слайдів
+       let slides = [
+           {
+               title: "Karazin",
+               background: "assets/img/unnamed.jpg",
+               link: "https://www.univer.kharkov.ua"
+           }, {
+               title: "СSD",
+               background: "assets/img/gp_1.jpg",
+               link: "http://www-csd.univer.kharkov.ua"
+           }, {
+               title: "Student Council",
+               background: "assets/img/stud-samovryad-brifd196ng-studentskoyi-radi.jpg",
+               link: "https://karazin.ua/universitet/studentske-samovriaduvannia/studentska-rada/"
+           }
+       ]
+       Slider.initSlider(slides);
+   };
+</script>
+
 </head>
 <body>
 <header class="header"><img class="logo" src="assets/img/startup.svg" alt="icon"></header>
@@ -12,8 +35,24 @@
    <main class="center column">
        <article>
            <h1>Slider</h1>
-           <p></p>
+        <div id="slider" class="slider"> 
+
+        </div>
+        <div class = "pagging">
+            <button class="btn" id="1">1</button>
+            <button class="btn" id="2">2</button>
+            <button class="btn" id="3">3</button>
+        </div>
+        <div class="buttons">
+
+        <button class="prevBtn btn">Prev</button>
+        <button class="nextBtn btn">Next</button> 
+        <button class="hide btn">Hide</button>
+        <button class="show btn">Show</button>
+        <button class="toggle btn">Start</button>
+        </div>
        </article>
+      
    </main>
    <nav class="left column">
        <h3>Left heading</h3>
@@ -34,5 +73,6 @@
 <div class="footer-wrapper">
    <footer class="footer"><p>Footer...</p></footer>
 </div>
+   <script src="assets/js/script.js"></script>
 </body>
 </html>
