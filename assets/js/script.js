@@ -68,6 +68,10 @@ function Slide(index, title, background, link ) {
 
     setSlide: function(id){
         let next;
+        if(this.current === id-1){
+            return;
+        }
+
         if (this.current === (this.current.length - id ) ) {
             next = id;
         } else {
